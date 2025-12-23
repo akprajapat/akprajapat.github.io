@@ -20,11 +20,11 @@ const Projects: FC = () => {
             <button
               key={index}
               onClick={() => setActiveTab(index)}
-              className={`px-4 py-3 border-b-2 md:border-l-2 md:border-b-0 border-navy-light text-sm font-mono whitespace-nowrap transition-all duration-200
+              className={`px-4 py-3 gap-2 border-b-2 md:border-l-2 md:border-b-0 border-navy-light text-sm font-mono whitespace-nowrap transition-all duration-200
                 ${
                   activeTab === index
-                    ? 'text-accent border-accent bg-navy-light/50'
-                    : 'text-text-secondary hover:text-accent hover:bg-navy-light/30'
+                    ? 'text-accent border-accent bg-navy-light/100'
+                    : 'text-text-secondary hover:text-accent hover:bg-navy-light/60'
                 }
               `}
             >
