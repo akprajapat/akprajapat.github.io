@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const ResumeButton: FC = () => {
   return (
     <motion.a
-      href="/resume.pdf"
+      href={`${process.env.PUBLIC_URL}/resume.pdf`}
       download="Arpit_Prajapat_Resume.pdf"
       className="inline-flex items-center gap-2 border-2 border-accent text-accent font-mono py-2.5 px-4 rounded-md hover:bg-accent/10 transition-all duration-300 group"
       whileHover={{ scale: 1.05 }}
