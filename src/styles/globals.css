@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    @apply scroll-smooth bg-primary;
+  }
+
+  body {
+    @apply bg-primary text-text-primary font-sans antialiased m-0 min-h-screen;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-navy;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-navy-light rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent/20;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-text-primary;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply flex items-center gap-2 text-3xl font-bold text-text-primary mb-8;
+  }
+
+  .section-number {
+    @apply font-mono text-accent text-xl;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Animation Classes */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Prose Customization */
+.prose {
+  @apply max-w-none;
+}
+
+.prose p {
+  @apply text-text-secondary mb-4;
+}
+
+.prose a {
+  @apply text-accent no-underline hover:underline;
+}
+
+.prose a {
+  @apply text-accent no-underline hover:underline;
+}
+
+/* Link hover effect */
+.hover-underline-animation {
+  @apply relative;
+}
+
+.hover-underline-animation::after {
+  @apply content-[''] absolute w-full scale-x-0 h-[2px] bottom-0 left-0 bg-accent origin-bottom-right transition-transform duration-300;
+}
+
+.hover-underline-animation:hover::after {
+  @apply scale-x-100 origin-bottom-left;
+}
+
+.subheading {
+  @apply text-2xl font-semibold text-text-primary mb-6;
+}
+
+.section-container {
+  @apply space-y-8;
+}
+
+.content-section {
+  @apply bg-secondary p-6 rounded-lg;
+}
+
+.link {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .heading {
+    font-size: 3rem;
+  }
+  
+  .subheading {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
