@@ -15,6 +15,15 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    fetch("https://skribble-tpft.onrender.com/api/health", {
+      method: "GET",
+      credentials: "omit", // important
+    }).catch(() => {
+      // intentionally swallow errors
+    });
+  }, []);
+
+  useEffect(() => {
     // Smooth scroll behavior
     document.documentElement.style.scrollBehavior = 'smooth';
     
