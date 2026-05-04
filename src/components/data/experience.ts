@@ -2,6 +2,27 @@ import { Experience } from '../../lib/types';
 
 export const experiences: Experience[] = [
   {
+    "company": "OceanFriends.ai (US Startup)",
+    "role": "Software Engineer (Contract)",
+    "duration": "Feb 2026 – Mar 2026",
+    "location": "Remote",
+    "achievements": [
+      "Built a multi-stage pipeline leveraging LLM-generated intent from predefined metrics and dimensions to convert natural language into validated SQL, ensuring accuracy, security, and minimal hallucination.",
+      "Developed a Python analytics layer for time-series anomaly detection, forecasting, and period-over-period comparisons, enabling LLM-driven actionable insights."
+    ]
+  },
+  {
+    "company": "Independent Quantitative Analysis & Systems Exploration",
+    "role": "Research & Systems Exploration",
+    "duration": "Nov 2022 – Jan 2026",
+    "location": "Remote, India",
+    "achievements": [
+      "Researched price behavior, liquidity, and execution dynamics in Indian equity and cryptocurrency markets.",
+      "Evaluated rule-based trading strategies using historical data and manual backtesting approaches.",
+      "Analyzed architecture of automated trading systems, including data ingestion, signal generation, and execution workflows."
+    ]
+  },
+  {
     company: "Apnatime Tech",
     role: "Software Development Engineer II",
     duration: "Jun 2022 – Oct 2022",

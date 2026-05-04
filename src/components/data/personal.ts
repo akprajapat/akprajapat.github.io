@@ -2,7 +2,7 @@ import { PersonalInfo, Education, SkillSet } from '../../lib/types';
 
 export const personalInfo: PersonalInfo = {
   name: "Arpit Prajapat",
-  role: "SDE II - Backend Engineer",
+  role: "AI Backend Engineer",
   one_liner: "Engineer passionate about turning complex systems into engines of growth and performance.",
   contact: {
     email: "arpitp1712@gmail.com",
@@ -11,35 +11,14 @@ export const personalInfo: PersonalInfo = {
     website: "https://example.com"
   },
   about: {
-    paragraphs: ["As a backend engineer with a B.Tech in Computer Science from IIT Bombay (AIR 46), I specialize in architecting scalable, resilient systems that drive user growth and operational efficiency",
-      "Over 2+ years at Apna.co (progressing from SDE I to SDE II in Bengaluru), I've built and optimized Golang microservices, distributed data pipelines, and real-time processing systems leveraging Kafka, Redis, Cassandra, Elasticsearch, and GCP (BigQuery, Cloud Storage, Cloud Functions, Cloud Scheduler) to deliver 20-60% performance gains across critical services.",
-       "I'm passionate about low-latency architectures, fault-tolerant design, and AI-assisted infrastructure (e.g., leveraging LLMs for automated scaling and intelligent monitoring)"
-    ],
-    contributions: [
-      {
-        title: "SEO & Traffic Optimization",
-        description: "Automated XML sitemap generation and async URL processing using Redis, BigQuery, Celery, and GCS\nBoosted organic rankings by 25% and increased overall traffic by 45%"
-      },
-      {
-        title: "Security & Reliability",
-        description: "Implemented Redis-based OTP rate limiting to block 60% of malicious requests\nBuilt multi-SMS provider integrations\nReduced latency by 30%, costs by 20%, and improved reliability by 25%"
-      },
-      {
-        title: "Seamless Authentication",
-        description: "Integrated Truecaller SDK for OTP-less logins (40% faster)\nImplemented Vodafone Idea AES/SHA-1 secure authentication\nDrove 15–25% user growth through smoother onboarding"
-      },
-      {
-        title: "Microservice Migrations",
-        description: "Led migration of Job-Search from Django to Gin (Golang) using Redis and Elasticsearch\nCut response times by 60%\nRebuilt Job-Feed on Cassandra, Redis, and Kafka\nReduced latency by 50%"
-      },
-      {
-        title: "Data-Driven Insights",
-        description: "Developed Metabase dashboards for sitemap analytics\nAccelerated business decisions by 40%"
-      }
-    ],
-    finally:"Currently seeking SDE II roles in high-scale backend environments focused on performance, reliability, and distributed systems innovation."
+    paragraphs: [
+      "Hello, I am Arpit Prajapat an experienced software engineer who specializes in creating scalable backend systems, highly data-centric applications, and products with AI technology.",
+      "Graduated from IIT Bombay (AIR 46 in JEE Advanced), with a degree in Computer Science & Engineering . Professional experience spans multiple companies in designing scalable backend systems that prioritize performance, robustness, and results-oriented work.",
+      "Designed and implemented LLM-based NLP pipelines and analytics systems with anomaly detection & forecasting functionalities at OceanFriends.ai. Prior to that, led several backend enhancements at Apnatime Tech, where I was responsible for migrating their Django monolithic system to microservices based architecture written in Golang (60% latency improvement) and developing various distributed systems leveraging Redis, BigQuery, Celery, and Elasticsearch technologies.",
+      "Engaged in independent quantitative research in stock and crypto market, examining aspects of market behavior and liquidity.",
+      "Primary skill set includes Python, Golang, Node.js, PostgreSQL, Redis, BigQuery, Kafka, and Google Cloud services; specializing in areas that combine systems, data, and AI."
+    ]
   }
-
 };
 
 export const education: Education = {
